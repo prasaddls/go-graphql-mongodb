@@ -12,7 +12,7 @@ import (
 
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/introspection"
-	"github.com/prasaddls/go-graphql-mongodb-curd/graph/model"
+	"github.com/prasaddls/go-graphql-mongodb/graph/model"
 	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
 )
@@ -327,7 +327,7 @@ func (ec *executionContext) field_Mutation_createJobListing_args(ctx context.Con
 	var arg0 model.CreateJobListingInput
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg0, err = ec.unmarshalNCreateJobListingInput2githubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐCreateJobListingInput(ctx, tmp)
+		arg0, err = ec.unmarshalNCreateJobListingInput2githubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐCreateJobListingInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -366,7 +366,7 @@ func (ec *executionContext) field_Mutation_updateJobListing_args(ctx context.Con
 	var arg1 model.UpdateJobListingInput
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg1, err = ec.unmarshalNUpdateJobListingInput2githubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐUpdateJobListingInput(ctx, tmp)
+		arg1, err = ec.unmarshalNUpdateJobListingInput2githubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐUpdateJobListingInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -735,7 +735,7 @@ func (ec *executionContext) _Mutation_createJobListing(ctx context.Context, fiel
 	}
 	res := resTmp.(*model.JobListing)
 	fc.Result = res
-	return ec.marshalNJobListing2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐJobListing(ctx, field.Selections, res)
+	return ec.marshalNJobListing2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐJobListing(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_createJobListing(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -802,7 +802,7 @@ func (ec *executionContext) _Mutation_updateJobListing(ctx context.Context, fiel
 	}
 	res := resTmp.(*model.JobListing)
 	fc.Result = res
-	return ec.marshalNJobListing2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐJobListing(ctx, field.Selections, res)
+	return ec.marshalNJobListing2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐJobListing(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_updateJobListing(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -869,7 +869,7 @@ func (ec *executionContext) _Mutation_deleteJobListing(ctx context.Context, fiel
 	}
 	res := resTmp.(*model.DeleteJobResponse)
 	fc.Result = res
-	return ec.marshalNDeleteJobResponse2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐDeleteJobResponse(ctx, field.Selections, res)
+	return ec.marshalNDeleteJobResponse2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐDeleteJobResponse(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_deleteJobListing(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -928,7 +928,7 @@ func (ec *executionContext) _Query_jobs(ctx context.Context, field graphql.Colle
 	}
 	res := resTmp.([]*model.JobListing)
 	fc.Result = res
-	return ec.marshalNJobListing2ᚕᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐJobListingᚄ(ctx, field.Selections, res)
+	return ec.marshalNJobListing2ᚕᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐJobListingᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_jobs(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -984,7 +984,7 @@ func (ec *executionContext) _Query_job(ctx context.Context, field graphql.Collec
 	}
 	res := resTmp.(*model.JobListing)
 	fc.Result = res
-	return ec.marshalNJobListing2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐJobListing(ctx, field.Selections, res)
+	return ec.marshalNJobListing2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐJobListing(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_job(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3632,16 +3632,16 @@ func (ec *executionContext) marshalNBoolean2bool(ctx context.Context, sel ast.Se
 	return res
 }
 
-func (ec *executionContext) unmarshalNCreateJobListingInput2githubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐCreateJobListingInput(ctx context.Context, v interface{}) (model.CreateJobListingInput, error) {
+func (ec *executionContext) unmarshalNCreateJobListingInput2githubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐCreateJobListingInput(ctx context.Context, v interface{}) (model.CreateJobListingInput, error) {
 	res, err := ec.unmarshalInputCreateJobListingInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNDeleteJobResponse2githubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐDeleteJobResponse(ctx context.Context, sel ast.SelectionSet, v model.DeleteJobResponse) graphql.Marshaler {
+func (ec *executionContext) marshalNDeleteJobResponse2githubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐDeleteJobResponse(ctx context.Context, sel ast.SelectionSet, v model.DeleteJobResponse) graphql.Marshaler {
 	return ec._DeleteJobResponse(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNDeleteJobResponse2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐDeleteJobResponse(ctx context.Context, sel ast.SelectionSet, v *model.DeleteJobResponse) graphql.Marshaler {
+func (ec *executionContext) marshalNDeleteJobResponse2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐDeleteJobResponse(ctx context.Context, sel ast.SelectionSet, v *model.DeleteJobResponse) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -3666,11 +3666,11 @@ func (ec *executionContext) marshalNID2string(ctx context.Context, sel ast.Selec
 	return res
 }
 
-func (ec *executionContext) marshalNJobListing2githubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐJobListing(ctx context.Context, sel ast.SelectionSet, v model.JobListing) graphql.Marshaler {
+func (ec *executionContext) marshalNJobListing2githubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐJobListing(ctx context.Context, sel ast.SelectionSet, v model.JobListing) graphql.Marshaler {
 	return ec._JobListing(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNJobListing2ᚕᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐJobListingᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.JobListing) graphql.Marshaler {
+func (ec *executionContext) marshalNJobListing2ᚕᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐJobListingᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.JobListing) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -3694,7 +3694,7 @@ func (ec *executionContext) marshalNJobListing2ᚕᚖgithubᚗcomᚋprasaddlsᚋ
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNJobListing2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐJobListing(ctx, sel, v[i])
+			ret[i] = ec.marshalNJobListing2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐJobListing(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -3714,7 +3714,7 @@ func (ec *executionContext) marshalNJobListing2ᚕᚖgithubᚗcomᚋprasaddlsᚋ
 	return ret
 }
 
-func (ec *executionContext) marshalNJobListing2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐJobListing(ctx context.Context, sel ast.SelectionSet, v *model.JobListing) graphql.Marshaler {
+func (ec *executionContext) marshalNJobListing2ᚖgithubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐJobListing(ctx context.Context, sel ast.SelectionSet, v *model.JobListing) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -3739,7 +3739,7 @@ func (ec *executionContext) marshalNString2string(ctx context.Context, sel ast.S
 	return res
 }
 
-func (ec *executionContext) unmarshalNUpdateJobListingInput2githubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚑcurdᚋgraphᚋmodelᚐUpdateJobListingInput(ctx context.Context, v interface{}) (model.UpdateJobListingInput, error) {
+func (ec *executionContext) unmarshalNUpdateJobListingInput2githubᚗcomᚋprasaddlsᚋgoᚑgraphqlᚑmongodbᚋgraphᚋmodelᚐUpdateJobListingInput(ctx context.Context, v interface{}) (model.UpdateJobListingInput, error) {
 	res, err := ec.unmarshalInputUpdateJobListingInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
