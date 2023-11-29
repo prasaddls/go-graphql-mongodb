@@ -6,9 +6,9 @@ package graph
 import (
 	"context"
 
+	"github.com/prasaddls/go-graphql-mongodb/database"
 	"github.com/prasaddls/go-graphql-mongodb/graph/generated"
-	database "github.com/prasaddls/go-graphql-mongodbdatabase"
-	"github.com/prasaddlsgo-graphql-mongodb/graph/model"
+	"github.com/prasaddls/go-graphql-mongodb/graph/model"
 )
 
 // CreateJobListing is the resolver for the createJobListing field.
