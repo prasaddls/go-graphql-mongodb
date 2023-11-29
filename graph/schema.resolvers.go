@@ -7,6 +7,7 @@ import (
 	"context"
 
 	"github.com/prasaddls/go-graphql-mongodb/database"
+	"github.com/prasaddls/go-graphql-mongodb/genarated"
 	"github.com/prasaddls/go-graphql-mongodb/graph/model"
 )
 
@@ -39,10 +40,10 @@ func (r *queryResolver) Job(ctx context.Context, id string) (*model.JobListing, 
 }
 
 // Mutation returns generated.MutationResolver implementation.
-func (r *Resolver) Mutation() generated.MutationResolver { return &mutationResolver{r} }
+func (r *Resolver) Mutation() genarated.MutationResolver { return &mutationResolver{r} }
 
 // Query returns generated.QueryResolver implementation.
-func (r *Resolver) Query() generated.QueryResolver { return &queryResolver{r} }
+func (r *Resolver) Query() genarated.QueryResolver { return &queryResolver{r} }
 
 type mutationResolver struct{ *Resolver }
 type queryResolver struct{ *Resolver }
