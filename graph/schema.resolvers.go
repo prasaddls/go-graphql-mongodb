@@ -7,7 +7,6 @@ import (
 	"context"
 
 	"github.com/prasaddls/go-graphql-mongodb/database"
-	"github.com/prasaddls/go-graphql-mongodb/generated"
 	"github.com/prasaddls/go-graphql-mongodb/graph/model"
 )
 
